@@ -1,0 +1,362 @@
+{
+  "Chess Introduction": {
+    "keywords": ["what is chess", "chess basics", "chess game"],
+    "response": "Chess is a strategic board game played between two players. The goal is to checkmate the opponent’s king by placing it in an inescapable threat."
+  },
+
+  "Chessboard Layout": {
+    "keywords": ["chessboard", "chess squares", "chess ranks and files"],
+    "response": "A chessboard consists of 64 squares arranged in 8 ranks (rows) and 8 files (columns). The squares alternate between light and dark colors."
+  },
+
+  "Chess Pieces and Symbols": {
+    "keywords": ["chess pieces", "chess symbols", "pieces in chess"],
+    "response": "Each player starts with 16 pieces: 1 king (♔), 1 queen (♕), 2 rooks (♖), 2 bishops (♗), 2 knights (♘), and 8 pawns (♙)."
+  },
+
+  "Chess Piece Values": {
+    "keywords": ["piece values", "chess piece worth", "material value"],
+    "response": "Chess pieces have different values: Pawn (1), Knight (3), Bishop (3), Rook (5), Queen (9), and the King is invaluable."
+  },
+
+  "Chessboard Setup": {
+    "keywords": ["how to set up chessboard", "chess starting position", "chess setup"],
+    "response": "The board should have a light square in the bottom right corner. Pieces are arranged with rooks in the corners, knights next to them, then bishops, queen on her color, and king beside her. Pawns go in front."
+  },
+
+  "Objective of Chess": {
+    "keywords": ["goal of chess", "win in chess", "chess objective"],
+    "response": "The main goal of chess is to checkmate your opponent’s king—placing it in a position where it cannot escape capture."
+  },
+
+  "Turn Rules": {
+    "keywords": ["chess turn", "who moves first in chess", "turn order"],
+    "response": "Players take turns moving one piece at a time. White always moves first."
+  },
+
+  "Capturing Pieces": {
+    "keywords": ["how to capture in chess", "capturing rules", "chess piece capture"],
+    "response": "A piece captures by moving onto a square occupied by an opponent’s piece, removing it from the board."
+  },
+
+  "Check and Checkmate": {
+    "keywords": ["what is check in chess", "what is checkmate", "checkmate meaning"],
+    "response": "Check means the king is under attack but can escape. Checkmate means the king is trapped with no legal moves, ending the game."
+  },
+
+  "Stalemate": {
+    "keywords": ["what is stalemate", "stalemate meaning", "draw in chess"],
+    "response": "A stalemate occurs when a player has no legal moves left, but their king is not in check. The game ends in a draw."
+  },
+
+  "King Movement": {
+    "keywords": ["how does the king move", "king movement", "king moves in chess"],
+    "response": "The king moves one square in any direction: horizontally, vertically, or diagonally.",
+    "url": "https://jyothsna-l.github.io/Chess-Edu/#king"
+  },
+
+  "Queen Movement": {
+    "keywords": ["how does the queen move", "queen movement", "queen moves in chess"],
+    "response": "The queen is the most powerful piece. It can move any number of squares in any direction: horizontally, vertically, or diagonally.",
+    "url": "https://jyothsna-l.github.io/Chess-Edu/#queen"
+  },
+
+  "Rook Movement": {
+    "keywords": ["how does the rook move", "rook movement", "rook moves in chess"],
+    "response": "The rook moves any number of squares in straight lines: horizontally or vertically.",
+    "url": "https://jyothsna-l.github.io/Chess-Edu/#rook"
+  },
+
+  "Bishop Movement": {
+    "keywords": ["how does the bishop move", "bishop movement", "bishop moves in chess"],
+    "response": "The bishop moves diagonally any number of squares. Each bishop stays on the color it started on.",
+    "url": "https://jyothsna-l.github.io/Chess-Edu/#bishop"
+  },
+
+  "Knight Movement": {
+    "keywords": ["how does the knight move", "knight movement", "knight moves in chess"],
+    "response": "The knight moves in an ‘L’ shape: two squares in one direction and then one square perpendicular. It is the only piece that can jump over other pieces.",
+    "url": "https://jyothsna-l.github.io/Chess-Edu/#knight"
+  },
+
+  "Pawn Movement": {
+    "keywords": ["how does the pawn move", "pawn movement", "pawn moves in chess"],
+    "response": "Pawns move forward one square but capture diagonally. On their first move, they can move two squares forward.",
+    "url": "https://jyothsna-l.github.io/Chess-Edu/#pawn"
+  },
+
+  "Pawn Promotion": {
+    "keywords": ["what is pawn promotion", "promote pawn", "pawn reaches last rank"],
+    "response": "When a pawn reaches the last rank, it must be promoted to a queen, rook, bishop, or knight."
+  },
+
+  "Special Move: Castling": {
+    "keywords": ["what is castling", "castling move", "castle in chess"],
+    "response": "Castling is a special move involving the king and a rook. The king moves two squares towards a rook, and the rook jumps over it. This can only be done if neither piece has moved before and no squares between them are occupied."
+  },
+
+  "Special Move: En Passant": {
+    "keywords": ["what is en passant", "en passant rule", "pawn special capture"],
+    "response": "En passant is a special pawn capture. If a pawn moves two squares forward from its starting position and lands beside an opponent's pawn, the opponent can capture it as if it had only moved one square."
+  },
+
+  "Special Move: Check & Checkmate": {
+    "keywords": ["what is check", "what is checkmate", "checkmate rules"],
+    "response": "Check is when a king is under attack. Checkmate occurs when the king is in check and has no legal moves to escape."
+  },
+
+  "Control the Center": {
+    "keywords": ["chess center control", "why control center", "center squares importance"],
+    "response": "Controlling the center (d4, d5, e4, e5) allows your pieces to move freely and limits your opponent’s options. It is a key principle in chess openings."
+  },
+
+  "Piece Activity": {
+    "keywords": ["piece activity", "active pieces", "how to use pieces effectively"],
+    "response": "Active pieces have more mobility and influence. Try to develop your pieces to strong squares where they control important areas of the board."
+  },
+
+  "Development in Opening": {
+    "keywords": ["chess development", "opening development", "best way to start chess"],
+    "response": "In the opening, move your knights and bishops before moving your queen or rooks. Get your pieces out quickly to prepare for the middle game."
+  },
+
+  "King Safety": {
+    "keywords": ["king safety in chess", "how to protect king", "best place for king"],
+    "response": "Castling early helps keep your king safe. Avoid moving too many pawns in front of your king, as it can create weaknesses."
+  },
+
+  "Avoid Early Queen Moves": {
+    "keywords": ["why not move queen early", "queen development", "early queen mistake"],
+    "response": "Moving the queen too early makes it an easy target for your opponent’s minor pieces. It’s best to develop other pieces first."
+  },
+
+  "Pawn Structure": {
+    "keywords": ["pawn structure", "weak pawns", "how to use pawns"],
+    "response": "Pawns create the foundation of your position. Avoid doubled, isolated, or backward pawns, as they can become weaknesses."
+  },
+
+  "Connect Your Rooks": {
+    "keywords": ["how to use rooks", "rook strategy", "why connect rooks"],
+    "response": "Once you develop your pieces and castle, move your queen so that your rooks are connected and can control open files."
+  },
+
+  "Avoid Hanging Pieces": {
+    "keywords": ["what is a hanging piece", "how to avoid blunders", "piece hanging mistake"],
+    "response": "A ‘hanging piece’ is an unprotected piece that can be captured for free. Always check if your pieces are safe before making a move."
+  },
+
+  "Basic Tactics": {
+    "keywords": ["chess tactics", "forks in chess", "pins in chess", "skewers in chess"],
+    "response": "Common tactical patterns include forks (attacking two pieces at once), pins (restricting movement), and skewers (forcing a more valuable piece to move). Learning these tactics helps in winning material."
+  },
+
+  "Open vs. Closed Positions": {
+    "keywords": ["open position", "closed position", "what is an open game"],
+    "response": "An open position has many open files and diagonals, favoring bishops and rooks. A closed position has many blocked pawns, favoring knights and slower plans."
+  },
+
+  "Chess Notation": {
+      "keywords": ["chess notation", "how to read chess notation", "algebraic notation", "chess move notation", "notation system in chess"],
+      "response": "Chess notation is a system used to record and communicate chess moves. The most common system is **Algebraic Notation**, which uses letters (a-h) for files and numbers (1-8) for ranks. \n\n**Basic Rules of Algebraic Notation:**\n1. **Piece Symbols:** Each piece (except the pawn) is represented by an uppercase letter:\n   - King = K, Queen = Q, Rook = R, Bishop = B, Knight = N\n2. **Pawn Moves:** Pawns are not labeled with a letter. Instead, their move is recorded by the destination square (e.g., 'e4' means a pawn moved to e4).\n3. **Captures:** A capture is denoted by 'x' (e.g., Bxe5 means the bishop captures on e5).\n4. **Castling:**\n   - Kingside castling = 'O-O'\n   - Queenside castling = 'O-O-O'\n5. **Check and Checkmate:**\n   - '+' denotes check (e.g., Qh5+ means queen gives check on h5).\n   - '#' denotes checkmate (e.g., Qh5# means checkmate on h5).\n6. **Pawn Promotion:** If a pawn promotes, the new piece is indicated after the move (e.g., e8=Q means the pawn moves to e8 and promotes to a queen).\n7. **En Passant:** This special capture is written normally like a pawn capture (e.g., exd6 if white captures black’s d5 pawn en passant).\n\n**Example Game in Algebraic Notation:**\n1. e4 e5  \n2. Nf3 Nc6  \n3. Bb5 a6  \n4. Ba4 Nf6  \n\nThis sequence represents the Ruy-Lopez opening. \n\nMastering notation helps you read chess books, study games, and record your own games for improvement!"
+  },
+
+  "Opening Principles": {
+    "keywords": ["chess opening principles", "best way to start chess game", "opening strategy"],
+    "response": "Follow these key principles in the opening:\n1. Control the center with pawns (e4, d4, e5, d5).\n2. Develop knights and bishops before moving the queen or rooks.\n3. Castle early for king safety.\n4. Avoid moving the same piece multiple times in the opening.\n5. Connect your rooks by clearing the back rank."
+  },
+
+  "The Italian Game": {
+    "keywords": ["italian game chess", "e4 e5 nf3 nc6 bc4", "italian opening"],
+    "response": "The Italian Game starts with 1.e4 e5 2.Nf3 Nc6 3.Bc4. It focuses on quick development and control of the center, leading to attacking opportunities."
+  },
+
+  "The Ruy-Lopez": {
+    "keywords": ["ruy lopez chess", "spanish game chess", "e4 e5 nf3 nc6 bb5"],
+    "response": "The Ruy-Lopez starts with 1.e4 e5 2.Nf3 Nc6 3.Bb5. It pressures Black's knight on c6 and aims for long-term positional advantages."
+  },
+
+  "The Sicilian Defense": {
+    "keywords": ["sicilian defense", "best response to e4", "c5 chess opening"],
+    "response": "The Sicilian Defense (1.e4 c5) is a strong counterattack for Black, aiming for an unbalanced position and attacking chances on the queenside."
+  },
+
+  "The French Defense": {
+    "keywords": ["french defense chess", "e4 e6 opening", "pawn structure in french"],
+    "response": "The French Defense (1.e4 e6) creates a solid structure but locks in Black’s light-squared bishop. Black plays for counterattacks later."
+  },
+
+  "The Caro-Kann Defense": {
+    "keywords": ["caro-kann defense", "best solid defense in chess", "c6 chess opening"],
+    "response": "The Caro-Kann (1.e4 c6) is a solid response to 1.e4, aiming for a strong pawn structure and safe king position."
+  },
+
+  "The Queen's Gambit": {
+    "keywords": ["queen's gambit chess", "d4 d5 c4 opening", "is queen's gambit good"],
+    "response": "The Queen’s Gambit (1.d4 d5 2.c4) challenges Black’s center immediately. Black can accept (2...dxc4) or decline (2...e6) the gambit."
+  },
+
+  "The King's Indian Defense": {
+    "keywords": ["king's indian defense", "d4 nf6 g6 chess", "best defense against d4"],
+    "response": "The King’s Indian Defense (1.d4 Nf6 2.c4 g6) lets Black allow White to control the center temporarily before launching counterattacks."
+  },
+
+  "The London System": {
+    "keywords": ["london system chess", "d4 bf4 setup", "solid chess opening"],
+    "response": "The London System (1.d4 and 2.Bf4) is a simple and solid setup for White, focusing on safe development and a strong pawn structure."
+  },
+
+  "The Scandinavian Defense": {
+    "keywords": ["scandinavian defense", "e4 d5 chess opening", "best counter to e4"],
+    "response": "The Scandinavian Defense (1.e4 d5) is an early queen trade strategy where Black willingly gives up the center in exchange for quick piece activity."
+  },
+
+  "Piece Coordination": {
+    "keywords": ["piece coordination", "how to coordinate pieces", "working together in chess"],
+    "response": "Your pieces should work together harmoniously. Avoid placing pieces where they block each other and try to create threats using multiple pieces."
+  },
+
+  "Pawn Breaks": {
+    "keywords": ["pawn breaks in chess", "how to open position", "when to push pawns"],
+    "response": "A pawn break is when you push a pawn to challenge your opponent’s structure. Properly timed pawn breaks open lines for your pieces and create weaknesses in your opponent’s position."
+  },
+
+  "Weak Squares": {
+    "keywords": ["weak squares in chess", "how to exploit weak squares", "what is a weak square"],
+    "response": "A weak square is one that cannot be easily defended by pawns. Placing a knight or another piece on a weak square can give you long-term control over that area."
+  },
+
+  "Outposts": {
+    "keywords": ["chess outpost", "best squares for knights", "what is an outpost"],
+    "response": "An outpost is a strong square where your piece, especially a knight, cannot be easily attacked by pawns. Knights on outposts can dominate the board."
+  },
+
+  "Open and Semi-Open Files": {
+    "keywords": ["open file in chess", "semi-open file", "how to use rooks"],
+    "response": "Open files (without pawns) and semi-open files (with only one pawn) are perfect for rooks. Placing your rooks on these files increases their activity."
+  },
+
+  "Minority Attack": {
+    "keywords": ["minority attack in chess", "pawn storm queenside", "how to attack in chess"],
+    "response": "A minority attack is when you push a smaller number of pawns against a larger pawn structure to create weaknesses in your opponent’s position."
+  },
+
+  "King Safety in Middlegame": {
+    "keywords": ["king safety middlegame", "weak king in chess", "how to protect king"],
+    "response": "Even after castling, be mindful of your king’s safety. Avoid unnecessary pawn moves in front of your king and watch for enemy attacks."
+  },
+
+  "Attacking the King": {
+    "keywords": ["how to attack king", "best attacking plans", "how to checkmate"],
+    "response": "King attacks often start with opening lines toward the opponent’s king, sacrificing material if necessary, and bringing all pieces into the attack."
+  },
+
+  "Exchanging Pieces": {
+    "keywords": ["when to trade pieces", "should I exchange pieces", "good trades in chess"],
+    "response": "Exchange pieces when it benefits your position. If you are ahead in material, trading simplifies the game. If you have more active pieces, avoid exchanges."
+  },
+
+  "Piece Activity Over Material": {
+    "keywords": ["piece activity vs material", "active pieces", "is material more important"],
+    "response": "Sometimes, it is better to have active pieces than extra material. A well-placed knight or bishop can be worth more than a rook trapped in a corner."
+  },
+
+  "King Activity in Endgame": {
+    "keywords": ["king activity endgame", "how to use king in endgame", "king in endgame"],
+    "response": "In the endgame, the king becomes a strong piece. Bring it to the center to help control squares and attack or defend pawns."
+  },
+
+  "Pawn Promotion": {
+    "keywords": ["pawn promotion", "how to promote pawn", "promotion in chess"],
+    "response": "A pawn reaching the last rank can be promoted, usually to a queen. Aim to support your pawn with your king and pieces to ensure promotion."
+  },
+
+  "Opposition": {
+    "keywords": ["opposition in chess", "king opposition", "how to win king and pawn endgame"],
+    "response": "Opposition is when two kings face each other with an odd number of squares between them. The player to move loses the opposition, allowing the other to advance."
+  },
+
+  "Zugzwang": {
+    "keywords": ["zugzwang in chess", "how to use zugzwang", "chess endgame strategy"],
+    "response": "Zugzwang is a situation where any move a player makes weakens their position. This is common in king and pawn endgames."
+  },
+
+  "Lucena Position": {
+    "keywords": ["lucena position", "winning rook endgame", "how to win rook and pawn endgame"],
+    "response": "The Lucena position is a winning method in rook endgames where the attacking king shelters behind a pawn to help promote it."
+  },
+
+  "Philidor Position": {
+    "keywords": ["philidor position", "how to draw rook endgame", "defensive rook endgame"],
+    "response": "The Philidor position is a key defensive technique in rook endgames. The defending rook stays on the third rank to stop the opposing king from advancing."
+  },
+
+  "Checkmating with King and Queen": {
+    "keywords": ["king and queen checkmate", "how to checkmate with queen", "queen mate technique"],
+    "response": "Use the queen to push the enemy king to the board’s edge while keeping your own king nearby for support. Deliver checkmate using a coordinated king and queen approach."
+  },
+
+  "Checkmating with King and Rook": {
+    "keywords": ["king and rook checkmate", "how to checkmate with rook", "rook mate technique"],
+    "response": "Use your rook to cut off the opponent’s king, then force it to the edge of the board where you can checkmate with the help of your king."
+  },
+
+  "Checkmating with Two Bishops": {
+    "keywords": ["two bishops checkmate", "how to checkmate with bishops", "bishop mate technique"],
+    "response": "Two bishops can force checkmate by controlling squares and working with the king to push the opponent’s king to the board’s edge."
+  },
+
+  "Checkmating with Knight and Bishop": {
+    "keywords": ["knight and bishop checkmate", "how to checkmate with knight and bishop", "hardest checkmate"],
+    "response": "Checkmating with a knight and bishop requires precise control. Use the bishop to limit squares, the knight to help push the king, and force it into a corner where checkmate is possible."
+  },
+
+  "Tactical Vision": {
+    "keywords": ["tactical vision in chess", "how to spot tactics", "tactics training"],
+    "response": "Tactical vision is the ability to quickly recognize tactical patterns like forks, pins, and discovered attacks. Training with puzzles improves this skill."
+  },
+
+  "Forcing Moves": {
+    "keywords": ["forcing moves chess", "how to calculate moves", "checks captures threats"],
+    "response": "Always look for forcing moves first: checks, captures, and threats. These moves limit your opponent’s responses and make calculation easier."
+  },
+
+  "Candidate Moves": {
+    "keywords": ["candidate moves chess", "how to find best move", "move selection in chess"],
+    "response": "Before making a move, list all reasonable options (candidate moves). Evaluate them before choosing the best one."
+  },
+
+  "Calculation Techniques": {
+    "keywords": ["calculation in chess", "how to calculate moves", "visualizing moves"],
+    "response": "Good calculation involves visualizing positions ahead. Try to see at least 3-5 moves deep and verify your lines for accuracy."
+  },
+
+  "Tree of Variations": {
+    "keywords": ["tree of variations chess", "how to analyze moves", "chess move tree"],
+    "response": "Chess calculations branch out like a tree. Analyze key variations rather than trying to calculate every single move."
+  },
+
+  "Pattern Recognition": {
+    "keywords": ["pattern recognition chess", "chess tactics recognition", "how to memorize chess"],
+    "response": "Recognizing common checkmates, tactical patterns, and structures helps speed up decision-making and improves intuition."
+  },
+
+  "Blunder Prevention": {
+    "keywords": ["how to avoid blunders", "common chess mistakes", "chess blunder check"],
+    "response": "Before making a move, double-check for blunders. Ask yourself: 'What can my opponent do after I move?'"
+  },
+
+  "Time Management": {
+    "keywords": ["chess time management", "how to play fast", "chess clock strategy"],
+    "response": "Use your time wisely. Spend more time in critical positions and move quickly in familiar or simple positions."
+  },
+
+  "Practical Decision-Making": {
+    "keywords": ["chess decision making", "how to make good moves", "practical chess tips"],
+    "response": "Not every move needs to be perfect. Sometimes, practical and safe moves are better than deep calculations in rapid time controls."
+  },
+
+  "Analyzing Your Games": {
+    "keywords": ["chess game analysis", "how to review games", "improve chess by analyzing"],
+    "response": "Review your games after playing. Identify mistakes, missed tactics, and better alternatives to improve faster."
+  }
+}
