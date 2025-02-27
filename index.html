@@ -16,6 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script>
+        // Check authentication status
+        if (localStorage.getItem("validated") !== "true") {
+          alert("You must authenticate first.");
+          window.location.href = "auth.html"; // Redirect to auth.html if not validated
+        }
+    </script>
     <div class="app-container">
         <header class="app-header">
             <img src="psgrkcw-new-logo.png" alt="College Logo" class="college-logo">
