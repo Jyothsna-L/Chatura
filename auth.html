@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Validation</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container for the form */
+        #upload-form {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            border-top: 5px solid #4CAF50;  /* Green accent at the top */
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* Instruction styles */
+        #instructions {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: left;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* Styling for the input field */
+        input[type="file"] {
+            display: block;
+            width: 93%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            font-size: 1rem;
+            background-color: #f9f9f9;
+        }
+
+        input[type="file"]:hover {
+            border-color: #4CAF50;
+        }
+
+        /* Submit button styles */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Result message styling */
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* Styles for different result states */
+        .success {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .info {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div id="upload-form">
+    <h2>Upload Your ID</h2>
+    <div id="instructions">
+        <p><strong>Instructions:</strong></p>
+        <ul>
+            <li>Ensure the image is clear and not blurry.</li>
+            <li>Upload a valid photo of your ID card.</li>
+            <li>Ensure text on the ID card is readable.</li>
+            <li>Accepted formats: JPEG, PNG, or other common image types.</li>
+        </ul>
+    </div>
+    <form id="auth-form">
+        <input type="file" id="id-card" accept="image/*" required>
+        <button type="submit">Validate</button>
+    </form>
+    <div id="result"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.1.0"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("auth-form");
+    const resultElement = document.getElementById("result");
+
+    // Define valid patterns (e.g., College Name, Roll Number, Batch Year)
+    const validPatterns = [
+        /Krishnammal/i,          // College name (case-insensitive)
+        /\b\d{2}[A-Z]{3}\d{3}\b/, // Roll number format (e.g., 22BAI019)
+        /\b20\d{2} - 20\d{2}\b/  // Batch year format (e.g., 2022 - 2025)
+    ];
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        const fileInput = document.getElementById("id-card");
+        const file = fileInput.files[0];
+
+        if (!file) {
+            resultElement.textContent = "Please upload a file.";
+            resultElement.style.color = "red";
+            return;
+        }
+
+        try {
+            resultElement.textContent = "Processing image...";
+            resultElement.style.color = "blue";
+
+            // Perform OCR to extract text from the uploaded image
+            const { data } = await Tesseract.recognize(file, "eng");
+            const extractedText = data.text;
+
+            // Check for valid patterns in the extracted text
+            const isValid = validPatterns.some(pattern => pattern.test(extractedText));
+
+            if (isValid) {
+                resultElement.textContent = "Access Granted! Redirecting...";
+                resultElement.style.color = "green";
+                console.log("Text matched. Access granted!");
+                localStorage.setItem("validated", "true");
+
+
+                // Redirect immediately after granting access
+                window.location.href = "index.html";  // Redirect to main page
+            } else {
+                resultElement.textContent = "Access Denied. Required text not found.";
+                resultElement.style.color = "red";
+                console.log("Access Denied. Text not found.");
+            }
+        } catch (error) {
+            resultElement.textContent = "Error processing the image.";
+            resultElement.style.color = "red";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
