@@ -1,0 +1,181 @@
+{
+    "History of Chess": {
+      "keywords": ["chess history", "origin of chess", "where chess started", "who invented chess"],
+      "response": "Chess originated in India around the 6th century as 'Chaturanga' before spreading to Persia, the Islamic world, and then Europe. Modern rules developed around the 15th century.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#history"
+    },
+    "Pawn": {
+      "keywords": ["pawn move", "pawn movement", "pawn rules", "pawn capture", "pawn first move"],
+      "response": "A pawn moves forward one square but captures diagonally. On its first move, it can move two squares forward.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#pawn"
+    },
+    "Knight": {
+      "keywords": ["knight move", "knight movement", "knight jump", "L-shape move", "knight capture"],
+      "response": "The knight moves in an 'L' shape: two squares in one direction and then one perpendicular. It can jump over pieces.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#knight"
+    },
+    "Bishop": {
+      "keywords": ["bishop move", "bishop movement", "bishop diagonals", "bishop capture", "diagonal movement"],
+      "response": "The bishop moves diagonally any number of squares and stays on the same color throughout the game.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#bishop"
+    },
+    "Rook": {
+      "keywords": ["rook move", "rook movement", "rook straight", "rook capture", "vertical horizontal move"],
+      "response": "The rook moves in straight lines either vertically or horizontally across the board.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#rook"
+    },
+    "Queen": {
+      "keywords": ["queen move", "queen movement", "queen powerful", "queen capture", "queen straight diagonal"],
+      "response": "The queen is the most powerful piece, moving any number of squares in straight lines or diagonally.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#queen"
+    },
+    "King": {
+      "keywords": ["king move", "king movement", "king one square", "king capture", "king checkmate"],
+      "response": "The king moves one square in any direction. It cannot move into check.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#king"
+    },
+    "Castling": {
+      "keywords": ["castling", "castle move", "king rook move", "castling rules", "king safety"],
+      "response": "Castling is a special move where the king moves two squares toward a rook, and the rook jumps over it. It helps protect the king.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#castling"
+    },
+    "En Passant": {
+      "keywords": ["en passant", "pawn special move", "en passant capture", "pawn rule", "pawn bypass"],
+      "response": "En passant is a special pawn capture that happens when a pawn moves two squares forward and lands beside an opponent's pawn.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#enpassant"
+    },
+    "Pawn Promotion": {
+      "keywords": ["pawn promotion", "pawn reaches last rank", "pawn to queen", "pawn change piece", "pawn upgrade"],
+      "response": "When a pawn reaches the 8th rank, it must be promoted to a queen, rook, bishop, or knight.",
+      "url": "https://jyothsna-l.github.io/Chess-Edu/#promotion"
+    },
+    "Castling": {
+    "keywords": ["castling", "castle move", "king rook move", "castling rules", "king safety"],
+    "response": "Castling is a special move where the king moves two squares towards a rook, and the rook jumps over the king to land beside it. It can be done kingside (short) or queenside (long). Conditions: 1) The king and rook must not have moved before, 2) No pieces between them, 3) The king is not in check, 4) The king cannot move through or land in check."
+  },
+  "En Passant": {
+    "keywords": ["en passant", "pawn special move", "en passant capture", "pawn rule", "pawn bypass"],
+    "response": "En passant is a special pawn capture. If a pawn moves two squares forward and lands beside an enemy pawn, the opponent can capture it as if it had moved only one square. This capture must be done immediately, or the right is lost."
+  },
+  "Pawn Promotion": {
+    "keywords": ["pawn promotion", "pawn reaches last rank", "pawn to queen", "pawn change piece", "pawn upgrade"],
+    "response": "When a pawn reaches the 8th (for White) or 1st rank (for Black), it must be promoted to a queen, rook, bishop, or knight. The most common choice is a queen due to its power. Promotion is compulsory and cannot be skipped."
+  },
+  "Check": {
+    "keywords": ["check", "king in check", "king under attack", "move king", "attacking king"],
+    "response": "Check happens when a king is directly attacked. The player must escape check by moving the king, blocking the attack, or capturing the attacking piece. A king can never move into check."
+  },
+  "Checkmate": {
+    "keywords": ["checkmate", "king trapped", "no legal moves", "end of game", "chess checkmate"],
+    "response": "Checkmate occurs when a king is under attack and has no legal moves to escape. This ends the game, with the checkmated player losing."
+  },
+  "Stalemate": {
+    "keywords": ["stalemate", "king no moves", "draw by stalemate", "no legal moves", "draw in chess"],
+    "response": "Stalemate happens when a player has no legal moves but is not in check. The game ends in a draw. This usually occurs in the endgame when a player has very few pieces left."
+  },
+  "Draw by Threefold Repetition": {
+    "keywords": ["threefold repetition", "draw by repetition", "same position three times", "chess draw"],
+    "response": "If the exact same position appears three times with the same legal moves available, a player can claim a draw. This prevents endless repetition."
+  },
+  "50-Move Rule": {
+    "keywords": ["50 move rule", "draw after 50 moves", "no capture no pawn move", "draw chess"],
+    "response": "If no captures or pawn moves occur for 50 consecutive moves, either player can claim a draw. This prevents games from lasting forever without progress."
+  },
+  "Insufficient Material": {
+    "keywords": ["insufficient material", "not enough pieces", "king vs king draw", "chess automatic draw"],
+    "response": "If neither player has enough material to checkmate, the game is drawn. Examples: King vs King, King vs King and Knight, or King vs King and Bishop."
+  },
+  "1. e4 (King’s Pawn Opening)": {
+    "keywords": ["1. e4", "e4 opening", "king's pawn opening", "best opening for white", "open games"],
+    "response": "1. e4 is one of the most popular first moves in chess. It immediately controls the center, opens lines for the queen and bishop, and leads to dynamic, tactical games. It is the starting point of famous openings like the Ruy-Lopez, Sicilian Defense, French Defense, Caro-Kann, and more."
+  },
+  "1. d4 (Queen’s Pawn Opening)": {
+    "keywords": ["1. d4", "d4 opening", "queen's pawn opening", "best opening for white", "closed games"],
+    "response": "1. d4 is a strong opening that controls the center and leads to more strategic, positional battles. It is often followed by c4 (Queen’s Gambit) or Nf3 (avoiding early pawn exchanges). It is the foundation of many strong openings, such as the Queen’s Gambit, Nimzo-Indian, and King's Indian Defense."
+  },
+  "1. c4 (English Opening)": {
+    "keywords": ["1. c4", "c4 opening", "English opening", "best opening for white", "positional opening"],
+    "response": "1. c4, known as the English Opening, focuses on controlling the center with a flank pawn. It often transposes into 1. d4 openings but keeps more flexibility. White can play in a hypermodern way with fianchettos or aim for a reversed Sicilian structure."
+  },
+  "1. Nf3 (Reti Opening)": {
+    "keywords": ["1. Nf3", "Nf3 opening", "Reti opening", "best opening for white", "flexible opening"],
+    "response": "1. Nf3 is a flexible move that prevents 1... e5 and can lead to various positional structures. White can later play d4, c4, or even g3, steering the game into different strategic openings. It avoids early pawn weaknesses and prepares strong piece development."
+  },
+  "1. g3 (King’s Fianchetto Opening)": {
+    "keywords": ["1. g3", "g3 opening", "fianchetto opening", "King's fianchetto", "best opening for white"],
+    "response": "1. g3 is a hypermodern opening where White fianchettos their king's bishop (Bg2) to control the center indirectly. It often leads to setups like the King’s Indian Attack, allowing White to delay central pawn moves and build up pressure gradually."
+  },
+  "1. b3 (Nimzo-Larsen Attack)": {
+    "keywords": ["1. b3", "b3 opening", "Nimzo-Larsen attack", "best opening for white", "flank opening"],
+    "response": "1. b3, also called the Nimzo-Larsen Attack, is an offbeat but strong opening. White fianchettos the queen’s bishop (Bb2) early, targeting the center while keeping flexibility in pawn structure. It can lead to solid and unbalanced positions."
+  },
+  "Sicilian Dragon": {
+    "keywords": ["Sicilian Dragon", "Dragon variation", "1. e4 c5", "Sicilian Defense", "sharp opening"],
+    "response": "The Sicilian Dragon (1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6) is one of the sharpest openings in chess. Black fianchettos the dark-squared bishop and prepares counterplay on the queenside. White often plays the Yugoslav Attack with Be3, Qd2, and a kingside pawn storm."
+  },
+  "O’Kelly Sicilian": {
+    "keywords": ["O’Kelly Sicilian", "O’Kelly variation", "Sicilian 2. a6", "Sicilian Defense"],
+    "response": "The O’Kelly Sicilian (1. e4 c5 2. Nf3 a6) is a rare but tricky variation. Black delays d6 or Nc6, waiting to see how White develops. It aims to control b5 and prevent White’s standard setups."
+  },
+  "Sicilian Najdorf": {
+    "keywords": ["Sicilian Najdorf", "Najdorf variation", "1. e4 c5", "Sicilian Defense"],
+    "response": "The Najdorf Sicilian (1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6) is one of the most complex and aggressive defenses. Black plays for dynamic counterplay on both wings. White can choose between positional and attacking setups, such as the English Attack or the Classical Variation."
+  },
+  "Caro-Kann Defense": {
+    "keywords": ["Caro-Kann Defense", "Caro-Kann opening", "1. e4 c6", "solid opening"],
+    "response": "The Caro-Kann Defense (1. e4 c6) is a solid and resilient opening where Black aims for d5. Unlike the French, the light-squared bishop is not blocked in. Common setups include the Classical (dxe4 followed by Bf5), Advance (3. e5), and Panov-Botvinnik Attack (3. exd5)."
+  },
+  "French Defense": {
+    "keywords": ["French Defense", "French opening", "1. e4 e6", "solid defense"],
+    "response": "The French Defense (1. e4 e6) aims to control d5 and challenge White’s center. Black’s main ideas involve counterattacking with c5 or f6. White can play the Advance (3. e5), Classical (3. Nc3), or Exchange (3. exd5) variations."
+  },
+  "1... e5 (Double King’s Pawn)": {
+    "keywords": ["1... e5", "open game", "best response to 1. e4", "double king's pawn"],
+    "response": "1... e5 is a classical response to 1. e4, leading to open games like the Ruy-Lopez, Italian Game, and Scotch. Black"
+  },
+  "Nimzo-Indian Defense": {
+    "keywords": ["Nimzo-Indian Defense", "Nimzo-Indian", "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4", "solid defense for Black"],
+    "response": "The Nimzo-Indian Defense (1. d4 Nf6 2. c4 e6 3. Nc3 Bb4) is a highly respected opening where Black pins the knight on c3 and fights for control of the center. This flexible system leads to strategic battles with chances for both sides."
+  },
+  "King’s Indian Defense": {
+    "keywords": ["King’s Indian Defense", "King’s Indian", "1. d4 Nf6 2. c4 g6", "hypermodern opening"],
+    "response": "The King’s Indian Defense (1. d4 Nf6 2. c4 g6) is a hypermodern opening where Black allows White to occupy the center before counterattacking with moves like d6 and e5. It often leads to rich, tactical middlegame positions."
+  },
+  "Slav Defense": {
+    "keywords": ["Slav Defense", "Slav opening", "1. d4 d5 2. c4 c6", "solid opening for Black"],
+    "response": "The Slav Defense (1. d4 d5 2. c4 c6) is one of the most solid defenses against 1. d4. Black supports the d5 pawn early and aims for strong central control while keeping the light-squared bishop free for development."
+  },
+  "Semi-Slav Defense": {
+    "keywords": ["Semi-Slav Defense", "Semi-Slav", "1. d4 d5 2. c4 e6 3. Nc3 c6", "flexible opening"],
+    "response": "The Semi-Slav (1. d4 d5 2. c4 e6 3. Nc3 c6) is a mix between the Slav and the Queen’s Gambit Declined. Black builds a solid structure and prepares dynamic counterplay, often leading to complex middlegame battles."
+  },
+  "Best Chess Openings": {
+    "keywords": ["best chess openings", "good chess openings", "best ways to start", "best first moves", "top chess openings", "how to start a chess game"],
+    "response": "There are many strong ways to start a chess game. Here are 10 of the best openings:\n\n1) **Ruy-Lopez** (1. e4 e5 2. Nf3 Nc6 3. Bb5) - A classical opening emphasizing central control and piece activity.\n2) **Italian Game** (1. e4 e5 2. Nf3 Nc6 3. Bc4) - A straightforward opening focusing on rapid development and early king safety.\n3) **Sicilian Defense** (1. e4 c5) - A sharp counterattacking defense for Black, leading to dynamic positions.\n4) **French Defense** (1. e4 e6) - A solid response for Black, aiming to control the center with d5.\n5) **Caro-Kann Defense** (1. e4 c6) - A solid and resilient defense focusing on pawn structure and strong piece development.\n6) **Scandinavian Defense** (1. e4 d5) - An aggressive attempt by Black to take control of the center early.\n7) **Queen’s Gambit** (1. d4 d5 2. c4) - A classical opening where White offers a pawn for central control.\n8) **King’s Indian Defense** (1. d4 Nf6 2. c4 g6) - A hypermodern system where Black allows White to occupy the center before launching a counterattack.\n9) **English Opening** (1. c4) - A flexible opening that can lead to various positional and strategic games.\n10) **London System** (1. d4 d5 2. Nf3 Nf6 3. Bf4) - A solid setup focusing on simple development and a strong pawn structure.Also a surprise opening 1.b3 named Nimzowitsch Larsen Attack\n\nType the name of an opening to learn more!"
+  },
+  "Queen Checkmate": {
+    "keywords": ["queen checkmate", "checkmate with queen", "how to checkmate with queen", "king and queen vs king", "queen mate"],
+    "response": "The Queen checkmate is one of the most fundamental checkmates in chess. It happens when you use your queen, with the help of your king, to force the enemy king to the edge of the board and deliver checkmate. \n\n**Steps to Checkmate with a Queen:**\n1. **Control Space** – Use the queen to cut off ranks and files, limiting the enemy king’s movement.\n2. **Push the King to the Edge** – Keep using your queen to force the king toward the board’s edge.\n3. **Use the King** – Bring your king closer to avoid stalemate and help with the final checkmate.\n4. **Deliver Checkmate** – Once the enemy king is trapped on the edge or in a corner, place your queen a knight’s distance away from the king and deliver checkmate, ensuring the king has no escape squares.\n\n**Example Position:**\nWhite King on g6, White Queen on e7; Black King trapped on h8 → Qh7#."
+  },
+  "Rook Checkmate": {
+    "keywords": ["rook checkmate", "checkmate with rook", "how to checkmate with rook", "king and rook vs king", "single rook mate"],
+    "response": "The Rook checkmate is a basic but important checkmating technique. The rook alone can checkmate the enemy king with the help of your own king by using the **'ladder method'** or 'restricting the king'.\n\n**Steps to Checkmate with a Rook:**\n1. **Cut Off the King** – Use your rook to control a rank or file, limiting the enemy king’s movement.\n2. **Use Your King** – Move your king closer to push the enemy king towards the board’s edge.\n3. **Reduce Space Step by Step** – Use your rook to cut off the opponent’s movement rank by rank or file by file.\n4. **Final Checkmate** – Once the king reaches the edge, move your king into position and deliver checkmate with the rook.\n"
+  },
+  "Double Rook Checkmate": {
+    "keywords": ["double rook checkmate", "checkmate with two rooks", "how to checkmate with 2 rooks", "two rooks mate", "rook roller checkmate"],
+    "response": "The **Double Rook Checkmate**, also known as the **'Rook Roller'**, is an easy and effective way to checkmate the opponent using two rooks. This method involves using the rooks together to push the enemy king towards the edge.\n\n**Steps to Checkmate with Two Rooks:**\n1. **Limit the King’s Space** – Place one rook a few ranks away from the enemy king to cut off movement.\n2. **Push the King Step by Step** – Move the second rook forward to further reduce the enemy king’s mobility.\n3. **Keep Alternating the Rooks** – Continue using the rooks one after another to push the king backward, like a rolling barrier.\n4. **Checkmate on the Edge** – Once the king is trapped on the last rank or file, deliver checkmate with the final rook move.\n."
+  },
+  "Chess Notation": {
+      "keywords": ["chess notation", "how to read chess notation", "algebraic notation", "chess move notation", "notation system in chess"],
+      "response": "Chess notation is a system used to record and communicate chess moves. The most common system is **Algebraic Notation**, which uses letters (a-h) for files and numbers (1-8) for ranks. \n\n**Basic Rules of Algebraic Notation:**\n1. **Piece Symbols:** Each piece (except the pawn) is represented by an uppercase letter:\n   - King = K, Queen = Q, Rook = R, Bishop = B, Knight = N\n2. **Pawn Moves:** Pawns are not labeled with a letter. Instead, their move is recorded by the destination square (e.g., 'e4' means a pawn moved to e4).\n3. **Captures:** A capture is denoted by 'x' (e.g., Bxe5 means the bishop captures on e5).\n4. **Castling:**\n   - Kingside castling = 'O-O'\n   - Queenside castling = 'O-O-O'\n5. **Check and Checkmate:**\n   - '+' denotes check (e.g., Qh5+ means queen gives check on h5).\n   - '#' denotes checkmate (e.g., Qh5# means checkmate on h5).\n6. **Pawn Promotion:** If a pawn promotes, the new piece is indicated after the move (e.g., e8=Q means the pawn moves to e8 and promotes to a queen).\n7. **En Passant:** This special capture is written normally like a pawn capture (e.g., exd6 if white captures black’s d5 pawn en passant).\n\n**Example Game in Algebraic Notation:**\n1. e4 e5  \n2. Nf3 Nc6  \n3. Bb5 a6  \n4. Ba4 Nf6  \n\nThis sequence represents the Ruy-Lopez opening. \n\nMastering notation helps you read chess books, study games, and record your own games for improvement!"
+  },
+  "Fork": {
+    "keywords": ["chess fork", "fork tactic", "double attack in chess", "what is a fork", "how to fork in chess"],
+    "response": "A fork is a powerful tactical motif where one piece attacks two or more opponent pieces at the same time, forcing them into a difficult position. \n\n**Key Points:**\n1. **Most Common Forking Pieces:** Knights, pawns, queens, and bishops are great at creating forks.\n2. **Knight Forks:** A knight can attack multiple pieces due to its unique 'L' movement, making it one of the best forking pieces.\n3. **Pawn Forks:** A pawn push can sometimes attack two pieces at once, especially in the center.\n4. **Queen Forks:** The queen's ability to move in all directions allows her to deliver deadly forks.\n5. **King Forks:** In the endgame, the king can fork two enemy pawns or a piece and a pawn.\n\n**Example:**\nIf white plays **Nc7+**, attacking the black king on e8 and the rook on a8, black is forced to move the king, allowing white to capture the rook.\n\nLearning how to set up forks is crucial for tactical play!"
+  },
+  "Pin": {
+    "keywords": ["chess pin", "what is a pin in chess", "pin tactic", "skewer in chess", "how to pin in chess"],
+    "response": "A pin is a tactic where a piece is restricted from moving because doing so would expose a more valuable piece behind it. \n\n**Types of Pins:**\n1. **Absolute Pin:** The pinned piece cannot legally move because doing so would expose the king (e.g., a knight pinned to the king by a bishop).\n2. **Relative Pin:** The pinned piece can move, but doing so would allow a higher-value piece (like a queen) to be captured.\n\n**Best Pieces for Pinning:**\n- Bishops and rooks are the strongest pieces for delivering pins due to their long-range attack.\n\n**Example:**\nIf black has a knight on f6 and white plays **Bg5**, pinning the knight to the queen on d8, black cannot move the knight without losing the queen.\n\nPins are a great way to restrict your opponent's mobility and gain material!"
+  }
+}
+  

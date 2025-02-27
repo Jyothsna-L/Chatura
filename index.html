@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Learning Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Include natural library for stemming -->
+    <script src="https://cdn.jsdelivr.net/npm/natural@latest/dist/natural.js"></script>
+    <!-- Include Fuse.js for fuzzy matching -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <!-- Include Compromise for NLP -->
+    <script src="https://unpkg.com/compromise"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <img src="psgrkcw-new-logo.png" alt="College Logo" class="college-logo">
+            <div class="header-text">
+                <h1>Chatura: Your Companion in Learning Chess</h1>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-log" id="chat-log">
+                <div class="bot-message">
+                    <span class="bot-icon">🤖</span>
+                    <p>Welcome to the Chess Learning Chatbot! I am Chatura, How can I help you?</p>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your message here..." />
+                <button id="send-button">Send</button>
+            </div>
+
+            <div class="learning-buttons" id="learning-buttons">
+                <button id="very-basic-button">Very Basic Chess</button>
+                <button id="basic-button">Basic Chess</button>
+                <button id="rules-button">Chess Rules</button>
+            </div>
+
+            <div class="resource-buttons" id="resource-buttons">
+                <button id="learn-more-button">Learn More</button>
+            </div>
+        </div>
+
+        <footer class="app-footer">
+            <p>Built with &#x1F90D; by Woman FIDE Master Jyothsna L ( Batch 2022 CS AI )</p>
+        </footer>
+    </div>
+
+    <!-- Include script file -->
+    <script src="script.js"></script>
+</body>
+</html>
