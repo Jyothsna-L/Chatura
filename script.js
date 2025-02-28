@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Step 3: Fuzzy match using Fuse.js
-        const fuse = new Fuse(Object.keys(knowledgeBase), { includeScore: true, threshold: 0.4 });
+        const fuse = new Fuse(Object.keys(knowledgeBase), { includeScore: true, threshold: 0.6 });
         const fuzzyResult = fuse.search(nounPhrases.join(" "));
 
         if (fuzzyResult.length > 0) {
