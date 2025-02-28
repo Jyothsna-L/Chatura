@@ -98,40 +98,75 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Get bot response based on user input
-    function getBotResponse(input) {
-        // Step 1: Extract noun phrases using Compromise
-        let doc = nlp(input);
-        let nounPhrases = doc.nouns().out('array');  // Extract nouns like "pawn move", "king movement"
+    function getBotResponse(userInput) {
+        userInput = userInput.toLowerCase().trim();
+        let doc = nlp(userInput);
+        let nounPhrases = doc.nouns().out('array'); // Extract noun phrases
+        let tokens = userInput.split(/\s+/); // Tokenize input
+        let stemmedTokens = tokens.map(word => lunr.stemmer(new lunr.Token(word)));
 
-        if (nounPhrases.length === 0) {
-            nounPhrases = [input.toLowerCase()];  // Fallback to original input if no noun phrases found
-        }
 
-        // Step 2: Check for exact matches in knowledge base
+        // Step 1: Check for direct matches
         for (const [category, data] of Object.entries(knowledgeBase)) {
             for (const keyword of data.keywords) {
-                if (nounPhrases.includes(keyword.toLowerCase())) {
-                    return data; // Exact match found
-                }    
+                if (nounPhrases.includes(keyword.toLowerCase()) || stemmedTokens.includes(stemmer(keyword.toLowerCase()))) {
+                    failedAttempts = 0; // Reset failed attempts
+                    return { response: data.response, url: data.url || null, url2: data.url2 || null };
+                }
             }
         }
-
-        // Step 3: Fuzzy match using Fuse.js
-        const fuse = new Fuse(Object.keys(knowledgeBase), { includeScore: true, threshold: 0.6 });
-        const fuzzyResult = fuse.search(nounPhrases.join(" "));
-
+    
+        // Step 2: Fuzzy Matching (Using Fuse.js)
+        const fuse = new Fuse(Object.keys(knowledgeBase), { threshold: 0.6 }); // Adjust sensitivity if needed
+        const fuzzyResult = fuse.search(userInput);
+    
         if (fuzzyResult.length > 0) {
-            return knowledgeBase[fuzzyResult[0].item]; // Best fuzzy match
+            let bestMatch = fuzzyResult[0].item;
+            failedAttempts = 0; // Reset failed attempts
+            return { response: knowledgeBase[bestMatch].response, url: knowledgeBase[bestMatch].url || null, url2: knowledgeBase[bestMatch].url2 || null };
         }
-
-        // Step 4: If no match, suggest related topics
-        const randomTopics = Object.keys(knowledgeBase).sort(() => 0.5 - Math.random()).slice(0, 3);
-        return {
-            response: `I didn't quite get that. Maybe try asking about: ${randomTopics.join(", ")}.`,
-        };
+    
+        // Step 3: Increase failed attempts and show suggestions
+        failedAttempts++;
+        let possibleSuggestions = fuse.search(userInput, { limit: 3 }).map(result => result.item);
+        
+        if (possibleSuggestions.length > 0) {
+            showDidYouMeanPopup(possibleSuggestions);
+            return { response: "I couldn't understand that... Could you try rephrasing?", url: null, url2: null };
+        }
+    
+        // Step 4: If failed 2 times, suggest random topics
+        if (failedAttempts >= 2) {
+            failedAttempts = 0; // Reset counter
+            let randomTopics = Object.keys(knowledgeBase).sort(() => 0.5 - Math.random()).slice(0, 6);
+            return { response: `This might be beyond my scope. Try exploring these topics: ${randomTopics.join(", ")}`, url: null, url2: null };
+        }
+    
+        return { response: "I couldn't understand that. Try rephrasing or typing the topic directly.", url: null, url2: null };
     }
-
+    
+    function showDidYouMeanPopup(suggestions) {
+        let popup = document.createElement("div");
+        popup.classList.add("popup");
+        popup.innerHTML = `
+            <div class="popup-content">
+                <h3>Did you mean one of these topics?</h3>
+                ${suggestions.map(topic => `<button class="suggestion-btn">${topic}</button>`).join("")}
+                <button class="close-popup">Close</button>
+            </div>
+        `;
+    
+        document.body.appendChild(popup);
+    
+        document.querySelectorAll(".suggestion-btn").forEach(button => {
+            button.addEventListener("click", function () {
+                handleUserInput(button.innerText);
+                popup.remove();
+            });
+        });
+    
+        document.querySelector(".close-popup").addEventListener("click", () => popup.remove());
+    }
     // Button event listeners
     veryBasicButton.addEventListener('click', function () {
         addBotMessage(hardcodedResponses["Very Basic Chess"].response);
