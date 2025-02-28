@@ -100,49 +100,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Get bot response based on user input
     function getBotResponse(input) {
-        const tokens = input.toLowerCase().split(/\s+/); // Basic tokenization
-        const stemmedTokens = tokens.map(token => stemmer(token)); // Use stemmer function
+        // Step 1: Extract noun phrases using Compromise
+        let doc = nlp(input);
+        let nounPhrases = doc.nouns().out('array');  // Extract nouns like "pawn move", "king movement"
 
-        // Check if user input matches any knowledge base topic
+        if (nounPhrases.length === 0) {
+            nounPhrases = [input.toLowerCase()];  // Fallback to original input if no noun phrases found
+        }
+
+        // Step 2: Check for exact matches in knowledge base
         for (const [category, data] of Object.entries(knowledgeBase)) {
             for (const keyword of data.keywords) {
-                const keywordTokens = keyword.toLowerCase().split(/\s+/);
-                const stemmedKeywordTokens = keywordTokens.map(token => stemmer(token));
-
-                // Check if any keyword token matches user input tokens
-                if (
-                    keywordTokens.some(kw => tokens.includes(kw)) ||
-                    stemmedKeywordTokens.some(kw => stemmedTokens.includes(kw))
-                ) {
-                    return data;
-                }
+                if (nounPhrases.includes(keyword.toLowerCase())) {
+                    return data; // Exact match found
+                }    
             }
         }
 
-        // Try fuzzy matching using Fuse.js
-        if (typeof Fuse !== 'undefined') {
-            const fuse = new Fuse(Object.keys(knowledgeBase), { includeScore: true });
-            const fuzzyResult = fuse.search(input);
+        // Step 3: Fuzzy match using Fuse.js
+        const fuse = new Fuse(Object.keys(knowledgeBase), { includeScore: true, threshold: 0.4 });
+        const fuzzyResult = fuse.search(nounPhrases.join(" "));
 
-            if (fuzzyResult.length > 0 && fuzzyResult[0].score < 0.3) {
-                const bestMatch = fuzzyResult[0].item;
-                return knowledgeBase[bestMatch];
-            }
-
-            // Provide suggestions if no exact match
-            const possibleSuggestions = fuzzyResult.slice(0, 3).map(result => result.item);
-
-            if (possibleSuggestions.length > 0) {
-                return { response: `Did you mean one of these?\n${possibleSuggestions.join(", ")}` };
-            }
+        if (fuzzyResult.length > 0) {
+            return knowledgeBase[fuzzyResult[0].item]; // Best fuzzy match
         }
 
-        // If no suggestions, show random topics
+        // Step 4: If no match, suggest related topics
         const randomTopics = Object.keys(knowledgeBase).sort(() => 0.5 - Math.random()).slice(0, 3);
         return {
-            response: `I didn't quite catch that. Try exploring these topics: ${randomTopics.join(", ")}`,
-            url: null,
-            url2: null
+            response: `I didn't quite get that. Maybe try asking about: ${randomTopics.join(", ")}.`,
         };
     }
 
