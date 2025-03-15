@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             response: "Basic Chess Rules:\n1. Each player starts with 16 pieces: 8 pawns, 2 rooks, 2 knights, 2 bishops, 1 queen, and 1 king.\n2. The objective is to checkmate the opponent's king (put it in a position where it can't escape capture).\n3. The game starts with each player moving their pieces in alternating turns.\n4. Castling, en passant, and pawn promotion are special rules."
         }
     };
-
+    console.log(typeof nlp); 
     // Fetch the knowledge base from an external JSON file
     fetch('chess_knowledge.json')
         .then(response => response.json())
