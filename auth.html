@@ -126,10 +126,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Define valid patterns (e.g., College Name, Roll Number, Batch Year)
     const validPatterns = [
-        /Krishnammal/i,          // College name (case-insensitive)
-        /\b\d{2}[A-Z]{3}\d{3}\b/, // Roll number format (e.g., 22BAI019)
-        /\b20\d{2} - 20\d{2}\b/  // Batch year format (e.g., 2022 - 2025)
+    /Krishnammal/i,          // College name (case-insensitive)
+    /\b\d{2}[A-Z]{3,4}\d{3}\b/, // Roll number format 
+    /\b20\d{2} - 20\d{2}\b/  // Batch year format 
     ];
+
 
     form.addEventListener("submit", async function (event) {
         event.preventDefault(); // Prevent form submission
