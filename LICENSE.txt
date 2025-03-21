@@ -1,0 +1,17 @@
+Copyright (C) 2024 Jyothsna Lakshminarayanan  
+All Rights Reserved.  
+
+This software, including its source code, architecture, and concept, is the original work of Jyothsna Lakshminarayanan.  
+Any unauthorized use, reproduction, modification, distribution, or commercial exploitation of this software is strictly prohibited.  
+
+You MUST NOT:  
+- Copy, modify, or distribute this software or its source code.  
+- Use this software for any commercial or non-commercial purpose without explicit written permission.  
+- Claim ownership, relicense, or integrate this software into another project.  
+- Sell, sublicense, or redistribute this software in any form.  
+
+You MAY:  
+- View the code for personal learning and reference only (without copying) and must cite.   
+
+Violating these terms may result in legal action.  
+For licensing inquiries, contact: https://github.com/Jyothsna-L.  
